@@ -21,9 +21,6 @@ const Page = () => {
             </div>
             <div className="flex flex-col justify-start items-center p-3">
               <p className="text-2xl text-gray-400">Hey, I'm Sathyam, a web developer dedicated to crafting seamless online experiences. I specialize in translating ideas into visually stunning and high-performing websites. Let's collaborate and elevate your brand's digital presence together.</p>
-              <div>
-                <p>Drop me a line</p>
-              </div>
             </div>
         </div>
       </div>
