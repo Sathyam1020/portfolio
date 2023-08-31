@@ -77,7 +77,7 @@ function ContactForm() {
 function Page() {
   return (
     <div className="flex justify-center items-center flex-col ">
-      <h1 className='font-bold text-3xl md:text-4xl text-white text-center leading-6 mb-5'>Let's Connect</h1>
+      <h1 className='font-semibold text-3xl md:text-3xl text-blue text-center py-2 mb-5'>Let’s talk about a project, collaboration or an idea you may have</h1>
       <ContactForm />
     </div>
   );

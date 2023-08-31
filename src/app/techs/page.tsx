@@ -12,7 +12,7 @@ const page = () => {
   return (
     <div className='min-h-screen'>
         <div>
-          <h1 className='font-PPMori text-3xl md:text-4xl text-white text-center leading-6'>Tech stack</h1>
+          <h1 className='font-semibold text-3xl md:text-4xl text-blue text-center leading-6'>I can help you with...</h1>
         </div>
         <div className='mt-3'>
           <Filter 
