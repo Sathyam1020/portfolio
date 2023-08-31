@@ -1,0 +1,55 @@
+import ExperienceSection from "@/components/ExperienceSection";
+import Socials from "@/components/Socials";
+
+const Page = () => {
+  return (
+    <div className='h-full p-2 rounded-lg flex flex-col mx-auto'>
+      <h1 className='font-bold text-3xl md:text-4xl text-white text-center leading-6 mt-2'>About Me</h1>
+      <div className="mt-5 p-2 rounded-lg bg-[#121417] mb-5">
+        <div className="flex flex-col lg:flex-row justify-between gap-4 py-4">
+            <p className="lg:hidden md:hidden font-semibold text-3xl md:text-4xl text-white text-center leading-6 mb-2">Sathyam Sahu</p>
+            <div className="w-full lg:min-w-[50%] rounded-md overflow-hidden flex justify-center items-center">
+            <iframe
+              width="100%"
+              height="80%"
+              src="https://www.youtube.com/embed/3AMUGkV1P9E"
+              title="YouTube Video Title"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            </div>
+            <div className="flex flex-col justify-start items-center p-3">
+                <p className="hidden lg:block md:block font-semibold text-2xl md:text-4xl text-white text-center leading-6 mt-2">Sathyam Sahu</p>
+                <p className="text-zinc-400 leading-6 mt-3 font-semibold">
+                👋 Hey there, I'm Sathyam, your creative partner in the world of web development! I'm not just about code – I'm all about turning your digital dreams into captivating realities.
+                </p >
+                <p className="text-zinc-400 leading-6 mt-3 font-semibold">
+                🎨 With a fusion of design flair and technical finesse, I'm here to craft seamless online experiences that pop. From sleek portfolios to dynamic e-commerce platforms, I've got you covered.
+                </p>
+                <p className="text-zinc-400 leading-6 mt-3 font-semibold">
+                🚀 Launching a website isn't just about visuals; it's about creating a digital journey. With pixel-perfect design and intuitive interfaces, I ensure your audience is engaged from click one.
+                </p>
+                <p className="text-zinc-400 leading-6 mt-3 font-semibold">
+                🌐 Ready to take your digital presence to the next level? Let's collaborate on turning your vision into an online masterpiece. Your brand deserves a spot in the digital sun – and I'm here to make it shine.
+                </p>
+                <p className="text-zinc-400 leading-6 mt-3 font-semibold">
+                Excited to embark on this digital adventure together!
+                </p>
+            </div>
+        </div>
+      </div>
+      <div className="mt-6 p-2">
+        <h1 className='font-bold text-2xl md:text-3xl text-white text-center leading-6 mb-6'>Experiences</h1>
+        <ExperienceSection/>
+      </div>
+      
+      <div className="mt-6 p-2 ">
+          <h1 className='font-bold text-2xl md:text-3xl text-white text-center leading-6 mt-2'>Socials</h1>
+          <Socials />
+      </div>
+      
+    </div>
+  );
+};
+
+export default Page;
