@@ -3,7 +3,7 @@ import {experiences} from "@/constants/exp";
 
 const ExperienceSection = () => {
   return (
-    <section className="py-6 bg-[#121417]">
+    <section className="py-6 bg-[#121417] rounded-lg">
       <div className="max-w-3xl mx-auto px-4">
         {experiences.map((experience) => (
           <div  key={experience.id} className="flex flex-row mb-4">
