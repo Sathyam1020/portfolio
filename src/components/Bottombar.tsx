@@ -22,7 +22,7 @@ const Bottombar = () => {
                    <div key={link.label}>
                         <Link 
                             href={link.route} 
-                            className={`relative flex flex-col items-center gap-2 rounded-lg p-2 sm:flex-1 sm:px-2 sm:py-2.5 ${
+                            className={`relative flex flex-col items-center gap-2 rounded-lg p-2 sm:flex-1 sm:px-2 sm:py-2.5  ${
                                 isActive && 'bg-blue'
                             }`}
                         >

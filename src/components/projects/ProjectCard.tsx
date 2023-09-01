@@ -21,6 +21,7 @@ interface CardProps {
 
 const ProjectCard = ({ project }: CardProps) => {
   const [hovered, setHovered] = useState(false);
+  
 
   const handleMouseEnter = () => {
     setHovered(true);

@@ -11,7 +11,7 @@ function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-md bg-[#121417] p-6 rounded-lg shadow-md">
+    <form onSubmit={handleSubmit} className={`max-w-md bg-[#121417] p-6 rounded-lg shadow-md `}>
       <label htmlFor="firstName" className="block text-gray-300 font-semibold mb-2">
         First Name
       </label>

@@ -7,12 +7,12 @@ import reviews from "@/constants/testimonials";
 const Page = () => {
   return (
     <div className='h-full p-2 rounded-lg flex flex-col mx-auto'>
-      <h1 className='font-semibold text-[32px] md:text-7xl text-blue text-center leading-6 mt-2'>Software Developer</h1>
-      <p className="text-center text-2xl mt-2 text-gray-400">Specialised in frontend and backend development.</p>
+      <h1 className='font-semibold text-[32px] md:text-7xl text-blue text-center leading-6 mt-2 prevent-text-selection'>Software Developer</h1>
+      <p className="text-center text-2xl mt-2 text-gray-400 prevent-text-selection">Specialised in frontend and backend development.</p>
       <div className="mt-5 p-2 rounded-lg bg-[#121417] mb-5">
         <div className="flex flex-col lg:flex-row justify-between gap-4 py-4">
  
-            <div className="w-full lg:min-w-[50%] rounded-xl overflow-hidden flex justify-center items-center">
+            <div className="w-full h-[300px] md:min-w-[50%] rounded-xl overflow-hidden flex justify-center items-center">
             <iframe
               width="100%"
               height="100%"
@@ -33,21 +33,21 @@ const Page = () => {
 
       {/* Experiences section  */}
       <div className="mt-6 p-2">
-        <h1 className='font-bold text-2xl md:text-3xl text-white text-center leading-6 mt-2'>Experiences</h1>
+        <h1 className='font-bold text-2xl md:text-3xl text-white text-center leading-6 mt-2 prevent-text-selection'>Experiences</h1>
         <div className="bg-blue h-[4px] w-1/5 mt-1 mx-auto mb-6"></div>
         <ExperienceSection/>
       </div>
 
       {/* Testimonials section  */}
       <div className="mt-6 p-2">
-        <h1 className='font-bold text-2xl md:text-3xl text-white text-center leading-6 mt-2'>Testimonials</h1>
+        <h1 className='font-bold text-2xl md:text-3xl text-white text-center leading-6 mt-2 prevent-text-selection'>Testimonials</h1>
         <div className="bg-blue h-[4px] w-1/5 mt-1 mx-auto mb-6"></div>
         <Testimonials reviews={reviews}/>
       </div>
       
       {/* Socials section  */}
       <div className="mt-6 p-2">
-          <h1 className='font-bold text-2xl md:text-3xl text-white text-center leading-6 mt-2'>Socials</h1>
+          <h1 className='font-bold text-2xl md:text-3xl text-white text-center leading-6 mt-2 prevent-text-selection'>Socials</h1>
           <div className="bg-blue h-[4px] w-1/5 mt-1 mx-auto mb-6"></div>
           <Socials />
       </div>
