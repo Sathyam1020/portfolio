@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import React, { useEffect } from 'react';
 
+
 interface Tech {
     id: number;
     title: string;
@@ -23,7 +24,9 @@ const Card = ({ tech }: CardProps) => {
             <div className='p-2 '>
                 <div className='relative aspect-video rounded-lg overflow-hidden'>
                     <div className='absolute inset-0'>
-                        <img
+                        <Image
+                            width={300}
+                            height={300}
                             src={tech.image.src}
                             alt={tech.image.alt}
                             className='object-cover w-full h-full'

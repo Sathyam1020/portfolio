@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
 
@@ -43,7 +44,9 @@ const ProjectCard = ({ project }: CardProps) => {
                 <div className='p-2 '>
                     <div className='relative aspect-video rounded-lg overflow-hidden'>
                         <div className='absolute inset-0'>
-                            <img
+                            <Image
+                                width={300}
+                                height={300}
                                 src={project.image.src}
                                 alt={project.image.alt}
                                 className='object-cover w-full h-full'
