@@ -1,6 +1,8 @@
 import ExperienceSection from "@/components/ExperienceSection";
 import Socials from "@/components/Socials";
+import Testimonials from "@/components/Testimonials";
 import Link from "next/link";
+import reviews from "@/constants/testimonials"; 
 
 const Page = () => {
   return (
@@ -28,13 +30,25 @@ const Page = () => {
             </div>
         </div>
       </div>
+
+      {/* Experiences section  */}
       <div className="mt-6 p-2">
-        <h1 className='font-bold text-2xl md:text-3xl text-white text-center leading-6 mb-6'>Experiences</h1>
+        <h1 className='font-bold text-2xl md:text-3xl text-white text-center leading-6 mt-2'>Experiences</h1>
+        <div className="bg-blue h-[4px] w-1/5 mt-1 mx-auto mb-6"></div>
         <ExperienceSection/>
       </div>
+
+      {/* Testimonials section  */}
+      <div className="mt-6 p-2">
+        <h1 className='font-bold text-2xl md:text-3xl text-white text-center leading-6 mt-2'>Testimonials</h1>
+        <div className="bg-blue h-[4px] w-1/5 mt-1 mx-auto mb-6"></div>
+        <Testimonials reviews={reviews}/>
+      </div>
       
-      <div className="mt-6 p-2 ">
+      {/* Socials section  */}
+      <div className="mt-6 p-2">
           <h1 className='font-bold text-2xl md:text-3xl text-white text-center leading-6 mt-2'>Socials</h1>
+          <div className="bg-blue h-[4px] w-1/5 mt-1 mx-auto mb-6"></div>
           <Socials />
       </div>
       
