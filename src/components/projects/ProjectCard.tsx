@@ -34,7 +34,7 @@ const ProjectCard = ({ project }: CardProps) => {
     return (
         <div>
             <div
-                className={`w-[300px] h-[230px] bg-[#5f9ed6] bg-opacity-100 rounded-md mt-4 ${
+                className={`w-[300px] h-[230px] bg-blue bg-opacity-100 rounded-md mt-4 ${
                     hovered ? 'cursor-pointer hover:shadow-lg' : ''
                 }`}
                 onMouseEnter={handleMouseEnter}

@@ -23,7 +23,7 @@ const Socials = () => {
         return (
           <div key={data.id}>
             <a href={data.link} target="_blank" rel="noopener noreferrer">
-              <div className="text-white text-center bg-[#121417] px-6 py-4 rounded-lg shadow-md cursor-pointer my-3 hover:border-white hover:border transition-all duration-200">
+              <div className="text-white text-center bg-[#121417] border border-[#121417] px-6 py-4 rounded-lg shadow-md cursor-pointer my-3 hover:bg-black hover:border-white transition-all duration-200">
                 <SocialIcon className="inline-block mr-2" />
                 {data.title}
               </div>

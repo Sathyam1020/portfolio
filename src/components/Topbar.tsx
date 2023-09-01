@@ -11,7 +11,7 @@ const Topbar = () => {
               <Image src={logo} alt='Image' width={32} height={32}
                   className='rounded-full overflow-hidden'
               />
-              <p className='text-3xl leading-7 text-[#9ccbf4] max-xs:hidden'>
+              <p className='text-3xl leading-7 text-blue max-xs:hidden'>
                   Sathyam Sahu 
               </p>
           </Link>

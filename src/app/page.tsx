@@ -23,7 +23,7 @@ const Page = () => {
             <div className="flex flex-col justify-start items-center p-3">
               <p className="md:text-2xl text-xl text-gray-400">Hey, I'm Sathyam, a web developer dedicated to crafting seamless online experiences. I specialize in translating ideas into visually stunning and high-performing websites. Let's collaborate and elevate your brand's digital presence together.</p>
               <Link href="/contact-me">
-                <p className="py-3 px-6 rounded-full bg-blue text-white mt-4 text-sm font-sembibold">Drop me a line</p>
+                <p className="py-3 px-6 rounded-full bg-blue border-blue border-[2px] hover:bg-[#121417] transition-all duration-200 text-white mt-4 text-sm font-sembibold">Drop me a line</p>
               </Link>
             </div>
         </div>
