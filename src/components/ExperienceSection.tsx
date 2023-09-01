@@ -1,5 +1,6 @@
 import React from 'react';
 import {experiences} from "@/constants/exp"; 
+import Link from 'next/link';
 
 const ExperienceSection = () => {
   return (
@@ -18,6 +19,19 @@ const ExperienceSection = () => {
             </div>
           </div>
         ))}
+       <div className='border-b-2 border-gray-400 p-2'></div>
+        <Link href='techs'>
+          <div className='mt-2 p-2 cursor-pointer'>
+            <p className='text-gray-400 text-center hover:text-white transition-all duration-300'>Explore My Tech Expertise in Depth...</p>
+          </div>
+        </Link>
+        <div className='border-b-2 border-gray-400 p-2'></div>
+        <Link href='projects'>
+          <div className='mt-2 p-2 cursor-pointer'>
+            <p className='text-gray-400 text-center hover:text-white transition-all duration-300'>Explore My Projects...</p>
+          </div>
+        </Link>
+
       </div>
     </section>
   );
