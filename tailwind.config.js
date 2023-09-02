@@ -3,7 +3,11 @@ const { fontFamily } = require('tailwindcss/defaultTheme')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ['class'],
-  content: ['./src/app/**/*.{ts,tsx}', './src/components/**/*.{ts,tsx}'],
+  content: {
+    relative: true,
+    transform: (content) => content.replace(/taos:/g, ''),
+    files:['./src/app/**/*.{ts,tsx}', './src/components/**/*.{ts,tsx}'],
+  },
   theme: {
     container: {
       center: true,
@@ -78,5 +82,10 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],
+  plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography'), require('taos/plugin')],
+  safelist: [
+  '!duration-[0ms]',
+  '!delay-[0ms]',
+  'html.js :where([class*="taos:"]:not(.taos-init))', 
+  ]
 }

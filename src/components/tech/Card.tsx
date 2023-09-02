@@ -27,7 +27,7 @@ const Card = ({ tech }: CardProps) => {
 
   return (
     <div
-      className={`w-[300px] h-[230px] bg-blue bg-opacity-80 rounded-md mt-4 transition-transform cursor-pointer  ${
+      className={`w-[300px] h-[230px] bg-blue bg-opacity-80 duration-300 rounded-md mt-4 transition-transform cursor-pointer  ${
         isHovered ? 'transform scale-105' : ''
       }`}
       onMouseEnter={handleHover} // Add hover event handlers

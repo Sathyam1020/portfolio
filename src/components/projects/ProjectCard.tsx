@@ -1,7 +1,8 @@
 'use client'
 
 import Image from 'next/image';
-import React, { useState } from 'react';
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
 import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
 
 interface Project {
@@ -13,6 +14,7 @@ interface Project {
   };
   githubLink: string;
   demoLink: string;
+  description: string; 
 }
 
 interface CardProps {
@@ -21,7 +23,14 @@ interface CardProps {
 
 const ProjectCard = ({ project }: CardProps) => {
   const [hovered, setHovered] = useState(false);
-  
+  const [progress, setProgress] = useState(false); 
+
+  useEffect(() => {
+    console.log("Project description:", project.description); // Log the description for debugging
+    if (project.description === "Under progress") {
+        setProgress(true);
+    }
+  }, [project.description]); 
 
   const handleMouseEnter = () => {
     setHovered(true);
@@ -34,7 +43,7 @@ const ProjectCard = ({ project }: CardProps) => {
   return (
     <div>
       <div
-        className={`w-[300px] h-[230px] bg-blue bg-opacity-100 rounded-md mt-4 transition-transform duration-300 ${
+        className={`w-[300px] h-[320px] bg-blue bg-opacity-100 rounded-md mt-4 transition-transform duration-300 ${
           hovered ? 'transform scale-105 cursor-pointer' : ''
         }`}
         onMouseEnter={handleMouseEnter}
@@ -78,7 +87,27 @@ const ProjectCard = ({ project }: CardProps) => {
             )}
           </div>
           <div className='p-4'>
-            <p className='text-black font-semibold text-lg leading-6'>{project.title}</p>
+            <p className='text-black font-semibold text-xl leading-6'>{project.title}</p>
+                {
+                    progress ? (
+                        <p className='text-red-500 font-semibold bg-black rounded-lg py-2 text-center mt-2'>{project.description}</p>
+                    ) : (
+                        <div>
+                            <p className='mt-2 text-gray-200'>
+                                {
+                                    project.description.length >100 ? 
+                                    (project.description.substring(0,90)) + "... " :
+                                    (project.description)
+                                }
+                                <Link href={`/projects/${project.id}`}>
+                                    <span className='text-black '>
+                                    read more
+                                    </span>
+                                </Link>
+                            </p>
+                        </div>
+                    )
+                }
           </div>
         </div>
       </div>

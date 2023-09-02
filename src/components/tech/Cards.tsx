@@ -35,7 +35,7 @@ const Cards = ({ category }: CardsProps) => {
   const techsD = getTechs();
 
   return (
-    <div className='flex flex-wrap justify-center gap-4 mb-4'>
+    <div className='flex flex-wrap justify-center gap-4 mb-4 '>
       {techsD.map((tech) => (
         <Card key={tech.id} tech={tech} />
       ))}

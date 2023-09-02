@@ -66,7 +66,7 @@ function ContactForm() {
       <button
         type="submit"
         disabled={state.submitting}
-        className="bg-[#5f9ed6] text-white px-4 py-2 rounded-lg mt-4 hover:bg-[#4988c0] focus:outline-none w-full"
+        className="bg-blue text-white px-4 py-2 rounded-lg mt-4 hover:bg-[#5289ef] focus:outline-none w-full"
       >
         {state.submitting ? 'Submitting...' : 'Submit'}
       </button>

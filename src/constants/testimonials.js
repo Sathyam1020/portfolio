@@ -1,13 +1,13 @@
 const reviews = [
     {
       id: 1,
-      name: "Pranay Gupta",
-      text: "I have had the pleasure of working with this team on several projects, and I am consistently impressed with their technical expertise and ability to deliver quality solutions on time and within budget. They are a true partner and an asset to any project.",
+      name: "Sarah D. - Web Development Client",
+      text: "Working with Sathyam was a game-changer for my project. He is a true expert in web development. His attention to detail, problem-solving skills, and ability to deliver beyond expectations are truly commendable. I highly recommend [Your Name] for any web development needs.",
     },
     {
       id: 2,
-      name: "Abir Pal",
-      text: "I have been working with this company for several years now, and I have always been impressed with their creativity and attention to detail. They are true professionals who take pride in their work and always go above and beyond to deliver exceptional results.",
+      name: "John M. - Colleague and Collaborator",
+      text: "Sathyam is not just a skilled developer but also an excellent team player. He brings creativity and innovation to every project [he/she] works on. His dedication to delivering high-quality results is inspiring and makes his a pleasure to work with.",
     },
     {
       id: 3,

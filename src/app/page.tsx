@@ -1,3 +1,5 @@
+
+
 import ExperienceSection from "@/components/ExperienceSection";
 import Socials from "@/components/Socials";
 import Testimonials from "@/components/Testimonials";
@@ -6,8 +8,9 @@ import reviews from "@/constants/testimonials";
 
 const Page = () => {
   return (
-    <div className='h-full p-2 rounded-lg flex flex-col mx-auto'>
+    <div className='h-full p-2 rounded-lg flex flex-col mx-auto scroll-smooth'>
       <h1 className='font-semibold text-[32px] md:text-7xl text-blue text-center leading-6 mt-2 prevent-text-selection'>Software Developer</h1>
+      <div className="bg-white h-[5px] w-2/5 mt-2 mx-auto"></div>
       <p className="text-center text-2xl mt-2 text-gray-400 prevent-text-selection">Specialised in frontend and backend development.</p>
       <div className="mt-5 p-2 rounded-lg bg-[#121417] mb-5">
         <div className="flex flex-col lg:flex-row justify-between gap-4 py-4">
@@ -25,7 +28,7 @@ const Page = () => {
             <div className="flex flex-col justify-start items-center p-3">
               <p className="md:text-2xl text-xl text-gray-400">Hey, I'm Sathyam, a web developer dedicated to crafting seamless online experiences. I specialize in translating ideas into visually stunning and high-performing websites. Let's collaborate and elevate your brand's digital presence together.</p>
               <Link href="/contact-me">
-                <p className="py-3 px-6 rounded-full bg-blue border-blue border-[2px] hover:bg-[#121417] transition-all duration-200 text-white mt-4 text-sm font-sembibold">Drop me a line</p>
+                <p className="py-3 px-6 rounded-full bg-blue border-blue border-[2px] hover:bg-[#121417] transition-all duration-200 text-white mt-5 text-sm font-sembibold">Drop me a line</p>
               </Link>
             </div>
         </div>
@@ -51,7 +54,7 @@ const Page = () => {
           <div className="bg-blue h-[4px] w-1/5 mt-1 mx-auto mb-6"></div>
           <Socials />
       </div>
-      
+      <p className="text-center text-sm mt-2 md:mt-4 text-gray-400 prevent-text-selection">© 2023 All Rights Reserved. Designed & Coded with ❤️️</p>
     </div>
   );
 };
