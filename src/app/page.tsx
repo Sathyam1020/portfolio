@@ -19,7 +19,7 @@ const Page = () => {
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/3AMUGkV1P9E"
+              src="https://www.youtube.com/embed/Ovam606RDwk"
               title="YouTube Video Title"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

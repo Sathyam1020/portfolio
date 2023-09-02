@@ -23,7 +23,7 @@ function Page({ params }: { params: { id: string } }) {
       <h1 className='font-semibold text-[32px] md:text-5xl text-blue text-center leading-6 mt-5 prevent-text-selection'>{particularProjectData?.title}</h1>
       <div className="bg-white h-[5px] w-1/5 mt-2 mx-auto"></div>
       {/* ... (other data properties) */}
-      <div className="bg-[#121417] p-4 rounded-lg mt-4 pt-10 overflow-hidden">
+      <div className="bg-[#121417] p-2 rounded-lg mt-4 pt-10 overflow-hidden">
         <Carousel cImages = {carouselImages}/>
       </div>
 
